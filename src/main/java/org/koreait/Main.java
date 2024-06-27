@@ -4,19 +4,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int a = in.nextInt();
-        int b = a;
-        String s = "";
-        for (int i = 1; i <= a; i++) {
-            String answer = "" + s;
-            for (int j = b; j >= 1; --j) {
-                answer += j + " ";
-            }
-            b = b - 1;
-            s = s + " ";
-            System.out.println(answer);
+        int s = 0;
+        int answer = 0;
+        int d = 1;
+        System.out.printf("%d ",answer);
+        for (int i = 1; i <= 9; i++) {
+            answer = d + s;
+            System.out.printf("%d ",answer);
+            d = s;
+            s = answer;
         }
-
     }
 }
